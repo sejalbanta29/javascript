@@ -1,0 +1,50 @@
+<html>
+<head>
+<title>js</title>
+</head>
+<body>
+<p id ="demo"></p>
+<script type= "text/javascript">
+let EmployeeArray = [
+    {
+        name : "Sejal",
+        age : 23,
+       salary : 6000,
+        DOB : 1997
+    },
+    {
+        name : "Venya",
+        age : 21,
+       salary : 6500,
+        DOB : 1999
+    },
+    {
+        name : "Shriya",
+        age : 29,
+       salary : 900,
+        DOB : 1991
+    },
+    {
+        name : "Tanya",
+        age : 24,
+       salary : 100,
+        DOB : 1995
+    }
+    
+    ];
+let mySalary =[];
+let j =0;
+for(let i=0; i<EmployeeArray.length; i++) {
+    let myEmployeeObj = EmployeeArray[i];
+    if(myEmployeeObj.salary > 5000) {
+        mySalary[j] = myEmployeeObj.name;
+        j = j+1;
+    }
+}
+
+
+document.getElementById("demo").innerHTML=mySalary;
+
+</script>
+</body>
+</html>
